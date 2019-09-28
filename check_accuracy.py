@@ -13,8 +13,8 @@ with open('./data/cn_cn_citation_find.txt','r') as standard_result:
              question_answer_map[line[0]] = [line[1]]
 
 
-#print(question_answer_map)
-json_file = open('./data/result_abs.json','r')
+print(set(question_answer_map.get('CN102025838A')))
+json_file = open('./tools/local/abs_socres.json','r')
 json_data = json.load(json_file)
 
 test_keys = json_data.keys()
